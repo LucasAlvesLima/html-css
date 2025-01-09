@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicos de tabelas</h1>
+    <table>
+    <caption>
+        filmes favoritos
+    </caption>
+        <thead>
+            <tr>
+                <th scope="col">grupos</th>
+                <th scope="col">nomes</th>
+                <th colspan="3" scope="colgroup">filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>ana maria santos</td>
+                <td>alien</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatris souza</td>
+                <td>hulk</td>
+                <td>incepition</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>claudia melo</td>
+                <td>obivion</td>
+                <td>matrix</td>
+                <td>big hore</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">homes</th>
+                <td>Bruno mendonça</td>
+                <td>intocaveis</td>
+                <td>aminesia</td>
+                <td>gladiador</td>
+            </tr>
+            <tr>
+                <td>daniel lorenço</td>
+                <td>olie</td>
+                <td>oblyo</td>
+                <td>dangal</td>
+            </tr>
+            <tr>
+                <td>fabiano</td>
+                <td>Star wars</td>
+                <td>taxi driver</td>
+                <td>toy story</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>

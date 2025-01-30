@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de form</title>
+</head>
+<body>
+    <h1>Exemplo de form</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="isexom" checked value="m"> <label for="isexom">Masculino</label><br>
+            <input type="radio" name="sexo" id="isexof" value="f"> <label for="isexof"> Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>esporte favoritos</legend>
+            <input type="checkbox" name="esfut" id="ifut" checked> <label for="ifut">futbol</label> <br>
+            <input type="checkbox" name="esvol" id="ivol"> <label for="ivol">volei</label> <br>
+            <input type="checkbox" name="escarta" id="icarta"> <label for="icarta">carta</label><br>
+            <input type="checkbox" name="essinuca" id="isinuca"> <label for="isinuca">sinuca</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

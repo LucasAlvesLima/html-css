@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Exedmplo de fomr</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--- select</option>
+                <optgroup label="regiao S">
+                    <option value="sp">sao paulo</option>
+                    <option value="mg">minas</option>
+                    <option value="ctba">curitiba</option>
+                </optgroup>
+
+                <optgroup label="regiao G">
+                    <option value="to">tocantis</option>
+                    <option value="bh">bahia</option>
+                    <option value="sr">sergipe</option>
+                </optgroup>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="iprof">profição</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm"> adm</option>
+                <option value="dev">desenvodedor</option>
+                <option value="jg">jogador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit" value="envir">
+            <input type="reset" value="limpar">
+        </p>
+
+    </form>
+</body>
+</html>

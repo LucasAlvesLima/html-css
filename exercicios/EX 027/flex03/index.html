@@ -9,7 +9,9 @@
             background-color: sandybrown;
 
             display: flex;
-            flex-direction: column-reverse;
+            /*flex-direction: row;
+            flex-wrap: nowrap;*/
+            flex-flow: row wrap;
 
             /* 
             
@@ -27,20 +29,20 @@
         .item {
             background-color: lawngreen;
             border: 1px solid black;
+            flex: auto;
             text-align: center;
-            padding: 10px;
             
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-        <div class="item">d</div>
-        <div class="item">e</div>
-        <div class="item">f</div>
+        <div class="item">exemplo de bloco a</div>
+        <div class="item">exemplo de bloco b</div>
+        <div class="item">exemplo de bloco c</div>
+        <div class="item">exemplo de bloco d</div>
+        <div class="item">exemplo de bloco e</div>
+        <div class="item">exemplo de bloco f</div>
     </div>
 </body>
 </html>

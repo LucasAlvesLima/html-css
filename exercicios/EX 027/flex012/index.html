@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble box</title>
+    <style> 
+        .conteiner{
+            background-color: sandybrown;
+            flex-flow: row nowrap;
+            display: flex;
+
+            /* 
+            
+                flex-direction:
+                 row (deitado)/ row-reverse / column / colunm-reverse / 
+                 
+                eixos: ROW > main-star (meio LE) / main-end (meio LD) // Cross-star (em cima LE) / Cross-end (em baixo LE)
+                eixos: ROW-REVERSE > main-star ( meio LD) / main-end (meio LE)// Cross-star (em cima LD) cross-end (em cima LD) 
+                Eixos : COLUMN > main-star (em cima LE) main-end (em baixo LE)// Cross-star (em cima LE) / Cross-end (em cima LD)
+                Eixos : COLUMN-REVERSE > main-star(em baixo LE) / Main-end(em cima LE )//Cross-star(em baico LE) / Cross-end(em baixo LD)
+                 
+                valor padão : 0 1 auto
+                ou
+                flex : initial
+                flex : none
+                flex : auto
+
+                flex : Grow  > shink > basis 
+            */
+
+
+        }
+
+        .item {
+            background-color: lawngreen;
+            border: 1px solid black;
+            text-align: center;
+            
+            
+        }
+        #cxa{
+            /*flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px;*/
+
+            /*flex : Grow  > shink > basis */
+
+            flex: 1 0 200px;
+        }
+        #cxb{
+            /*flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 150px;*/
+            
+            /*flex : Grow  > shink > basis */
+
+            flex: 1 1 150px;
+        }
+
+        #cxc{
+            /*flex-shrink: 8;
+            flex-grow: 1;
+            flex-basis: auto;*/
+
+            /*flex : Grow  > shink > basis */
+
+            flex: 1 8 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxa">a</div>
+        <div class="item" id="cxb">b</div>
+        <div class="item" id="cxc">c</div>
+        
+    </div>
+</body>
+</html>
